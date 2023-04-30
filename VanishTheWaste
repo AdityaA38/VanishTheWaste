@@ -1,0 +1,119 @@
+//
+//  ContentView.swift
+//  Waste Vanish
+//
+//  Created by Aditya Akella on 4/29/23.
+//
+
+import SwiftUI
+
+struct ContentView: View {
+    var body: some View {
+        TabView{
+            ZStack{
+Image("Ocean")
+            Text("VanishTheWaste")
+                .font(.system(size: 36))
+                .frame(width:280, height: 50)
+               .background(Color.black)
+                .foregroundColor(.yellow)
+             
+
+            }
+                .tabItem(){
+                    Image(systemName:"1.square.fill")
+                    Text("Homepage")
+            }
+           
+            ZStack{
+                Image("Dark")
+            List{
+               
+                Text("Types of Waste")
+                    .font(.system(size: 36))
+                VStack{
+                Text("Waste are unwanted or unusable materials.")
+                }
+                VStack{
+                    Text("Waste is any substance discarded after primary use.")
+                }
+                VStack{
+                Text("Types of Waste Include:")
+                Text("Hazardous Waste: Waste developed from Industries")
+                Text("Domestic Waste: Waste generated in houeses")
+                Text("Agricultural Waste: Waste such as compost")
+                }
+            }
+            }
+            
+                .tabItem(){
+                    Image(systemName:"1.square.fill")
+                    Text("General facts")
+                    
+                }
+            List{
+            Text("How is waste damaging our Earth")
+                .font(.system(size:36))
+               
+                VStack{
+                Text("Three Most common ways waste is Damaging Earth")
+                Text("Land pollution: Most common type of pollution, which is when waste is just thrown onto the ground and it does not decompose. This contaminates the soil, and produces toxic chemicals, which harm the life around it.")
+                    Spacer()
+                    .frame(height:20)
+                Text("Water Pollution: This occurs when waste is dumped into waterbodies, which eventually end up in the ocean. Not only does this contaminate the water and hurt animals living in these water bodies, but it decrease the amount of fresh water available")
+                    Spacer()
+                    .frame(height:20)
+                Text("Air Pollution: As more and more trash is burned up toxic gases such carbon dioxide and methane are produced, which destroys the ozone layer, and is one of the leading causes of climate change")
+                }
+            }
+                .tabItem(){
+                    Image(systemName:"1.square.fill")
+                    Text("Damaging the Earth")
+                    
+                }
+            List{
+            Text("How we can help")
+                .font(.system(size: 36))
+                VStack{
+                Text("There are Many Way We can help prevent this disaster from increasing. A few of these ways include")
+                    Spacer()
+                    .frame(height:40)
+                Text("1. Try to use more reusable items in the house, which will help reduce the amount of trash piling up and being burned")
+                    Spacer()
+                    .frame(height:20)
+                Text("2. Do not throw everthing in the trash can. If it can be recycled, put it in the recycling bin so it can be reused into something else")
+                    Spacer()
+                    .frame(height:20)
+                Text("3. Do not throw compost into the trash. Instead, by throwing into compost bins, it can be turned into fresh soil and fertilzier, and it will not make a big and stinky mess.")
+                    Spacer()
+                    .frame(height:20)
+                    Text("4. Do not waste Food!")
+                }
+
+                
+                
+                .tabItem(){
+                    Image(systemName:"1.square.fill")
+                    Text("Help")
+                    
+                }
+                
+                }
+            List{
+                VStack{
+            Text("Lastly, If you believe that you are not making a difference, you are worng. Even though one person might not seem like a lot, it is the start of a revolution, which is more and more people start to do, can make a big impact for the better!")
+                .font(.system(size: 15))
+                .frame(width:400, height: 500)
+               .background(Color.black)
+                .foregroundColor(.blue)
+                }
+            }
+        }
+    }
+}
+
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView()
+    }
+}
